@@ -20,6 +20,12 @@
           />
           <button type="submit" class="btn btn-add">Adicionar</button>
         </form>
+        <ul class="task-list">
+          <li v-for="task in tasks" :key="task.id" class="task-item">
+            <span class="task-text">{{task.text}}</span>
+            <button @click="removeTask(task.id)" aria-label="Remover Tarefa">&#10005</button>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
