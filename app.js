@@ -20,6 +20,9 @@ const App = {
                     console.log('Nova tarefa adicionada:', newTask.text);
           }
           removeTask(taskId){
-                    this.tasks = this.tasks.filter(task => task.id !== taskId)
+                    this.tasks = this.tasks.filter(task => task.id !== taskId);
+                    console.log('Tarefa removida com ID:', taskId);
           }
+          
 }
+Vue.createApp(App).mount('#app')
