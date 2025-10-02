@@ -6,5 +6,21 @@
     <title>Gerênciador de tarefas</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="app">
+      <div class="task-manager-panel">
+        <h1 class="panel-title">Minhas Tarefaz</h1>
+        <form @submit.prevent="addTask" class="input-area">
+          <input
+            type="text"
+            v-model="newTaskText"
+            placeholder="O que precisa ser feito"
+            class="task-input"
+            aria-label="Nova Tarefa"
+          />
+          <button type="submit" class="btn btn-add">Adicionar</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
