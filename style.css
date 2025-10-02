@@ -1,9 +1,17 @@
-*{
-          box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-html, body{
-          height: 100%;
+html,
+body {
+  height: 100%;
 }
-body{
-          margin 0;
+body {
+  margin: 0;
+}
+:root {
+  --color-kelp: #3d402f;
+  --color-willow-grove: #6b7f6b;
+  --color-whiskey: #d59a79;
+  --color-tamarillo: #9c0d0f;
+  --color-text-light: #f4f4f4;
 }
