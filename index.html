@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerênciador de tarefas</title>
     <link rel="stylesheet" href="style.css" />
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
     <div id="app">
@@ -23,13 +23,13 @@
         </form>
         <ul class="task-list">
           <li v-for="task in tasks" :key="task.id" class="task-item">
-            <span class="task-text">{{task.text}}</span>
-            <button @click="removeTask(task.id)" aria-label="Remover Tarefa">&#10005</button>"git"
+            <span class="task-text">{{ task.text }}</span>
+            <button @click="removeTask(task.id)" aria-label="Remover Tarefa">
+              &#10005;
+            </button>
           </li>
         </ul>
-        <p class="project-title">
-          M1P1N1/N2: Gerenciador de Tarefas Essencial
-        </p>
+        <p class="project-title">M1P1N1/N2: Gerenciador de Tarefas Essencial</p>
       </div>
     </div>
     <script src="app.js"></script>
