@@ -7,6 +7,14 @@ body {
 }
 body {
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-willow-grove);
+  color: var(--color-text-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 :root {
   --color-kelp: #3d402f;
