@@ -23,9 +23,12 @@
         <ul class="task-list">
           <li v-for="task in tasks" :key="task.id" class="task-item">
             <span class="task-text">{{task.text}}</span>
-            <button @click="removeTask(task.id)" aria-label="Remover Tarefa">&#10005</button>
+            <button @click="removeTask(task.id)" aria-label="Remover Tarefa">&#10005</button>"git"
           </li>
         </ul>
+        <p class="project-title">
+          M1P1N1/N2: Gerenciador de Tarefas Essencial
+        </p>
       </div>
     </div>
   </body>
