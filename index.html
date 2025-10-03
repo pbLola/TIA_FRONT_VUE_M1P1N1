@@ -22,8 +22,15 @@
           <button type="submit" class="btn btn-add">Adicionar</button>
         </form>
         <ul class="task-list">
-          <li v-for="task in tasks" :key="task.id" class="task-item">
-            <span class="task-text">{{ task.text }}</span>
+          <li
+            v-for="task in tasks"
+            :key="task.id"
+            class="task-item"
+            :class="{task-text> task.done}"
+          >
+            <span class="task-text" @click="toggleDone(task.id)"
+              >{{ task.text }}</span
+            >
             <button
               @click="removeTask(task.id)"
               class="btn btn-remove"
