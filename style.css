@@ -84,3 +84,10 @@ body {
 .task-text {
   word-break: brake-word;
 }
+.empty-message {
+  text-align: center;
+  color: var(--color-whiskey);
+  font-style: italic;
+  padding: 20px 0;
+  border-top: 1px dashed rgba(213, 154, 122, 0.3);
+}
