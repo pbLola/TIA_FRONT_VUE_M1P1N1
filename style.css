@@ -93,6 +93,7 @@ body {
   word-break: break-word;
   flex-grow: 1;
   margin-right: 15px;
+  cursor: pointer;
 }
 .empty-message {
   text-align: center;
@@ -106,4 +107,8 @@ body {
   color: var(--color-kelp);
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.task-done .task-text {
+  text-decoration: line-through;
+  opacity: 0.6;
 }
