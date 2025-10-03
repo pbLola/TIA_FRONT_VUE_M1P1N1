@@ -66,3 +66,21 @@ body {
 .btn-add:hover {
   background-color: #8a0c0e;
 }
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+.task-item {
+  background-color: var(--color-whiskey);
+  color: var(--color-kelp);
+  padding: 15px;
+  margin-bottom: 10 px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.task-text {
+  word-break: brake-word;
+}
