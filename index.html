@@ -28,6 +28,12 @@
             class="task-item"
             :class="{'task-done': task-done}"
           >
+            <input
+              type="checkbox"
+              v-model="task.done"
+              class="task-checkbox"
+              aria-label="Marcar como concluída"
+            />
             <span class="task-text" @click="toggleDone(task.id)"
               >{{ task.text }}</span
             >
