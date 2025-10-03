@@ -11,7 +11,7 @@ const App = {
                     }
                     const newTask = {
                               id: Date.now(),
-                              Text: this.newTaskText.trim()
+                              text: this.newTaskText.trim(),
                               done: false
                     };
                     this.tasks.push(newTask);
