@@ -91,3 +91,9 @@ body {
   padding: 20px 0;
   border-top: 1px dashed rgba(213, 154, 122, 0.3);
 }
+.project-title {
+  font-size: 0.9em;
+  color: var(--color-kelp);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

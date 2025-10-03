@@ -15,7 +15,7 @@
           <input
             type="text"
             v-model="newTaskText"
-            placeholder="O que precisa ser feito"
+            placeholder="O que precisa ser feito?"
             class="task-input"
             aria-label="Nova Tarefa"
           />
@@ -24,7 +24,11 @@
         <ul class="task-list">
           <li v-for="task in tasks" :key="task.id" class="task-item">
             <span class="task-text">{{ task.text }}</span>
-            <button @click="removeTask(task.id)" aria-label="Remover Tarefa">
+            <button
+              @click="removeTask(task.id)"
+              class="btn btn-remove"
+              aria-label="Remover Tarefa"
+            >
               &#10005;
             </button>
           </li>
