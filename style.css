@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
 }
 :root {
-  --color-kelp: #3d402f;
+  --color-kelp: #303323;
   --color-willow-grove: #6b7f6b;
   --color-whiskey: #d59a79;
   --color-tamarillo: #9c0d0f;
@@ -44,6 +44,7 @@ body {
 .input-area {
   display: flex;
   margin-bottom: 20px;
+  min-width: 0;
 }
 .task-input {
   flex-grow: 1;
