@@ -4,7 +4,8 @@ const App = {
                               tasks: [], newTaskText: ''
                     }
           },
-          addTask(){
+          methods: {
+                    addTask(){
                     if(this.newTaskText.trim()=== ''){
                               alert('A tarefa não pode estar vazia')
                               return;
@@ -22,6 +23,7 @@ const App = {
           removeTask(taskId){
                     this.tasks = this.tasks.filter(task => task.id !== taskId);
                     console.log('Tarefa removida com ID:', taskId);
+          }
           }
           
 }
