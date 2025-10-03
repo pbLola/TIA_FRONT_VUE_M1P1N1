@@ -33,7 +33,11 @@
             </button>
           </li>
         </ul>
+        <p v-if="tasks.lenght === 0" class="empty-message">
+          Nenhuma tarefa pendente. Crie seu primeiro item para começar!
+        </p>
       </div>
+
       <p class="project-title">M1P1N1/N2: Gerenciador de Tarefas Essencial</p>
     </div>
     <script src="app.js"></script>
