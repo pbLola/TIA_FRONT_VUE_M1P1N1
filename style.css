@@ -41,3 +41,28 @@ body {
   text-transform: uppercase;
   font-weight: 500;
 }
+.input-area {
+  display: flex;
+  margin-bottom: 20px;
+}
+.task-input {
+  flex-grow: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 1em;
+  color: var(--color-kelp);
+}
+.btn-add {
+  background-color: var(--color-tamarillo);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.btn-add:hover {
+  background-color: #8a0c0e;
+}
