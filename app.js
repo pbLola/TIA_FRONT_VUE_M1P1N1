@@ -1,30 +1,30 @@
 const App = {
-          data(){
-                    return{
-                              tasks: [], newTaskText: ''
-                    }
-          },
-          methods: {
-                    addTask(){
-                    if(this.newTaskText.trim()=== ''){
-                              alert('A tarefa não pode estar vazia')
-                              return;
-                    }
-                    const newTask = {
-                              id: Date.now(),
-                              text: this.newTaskText.trim(),
-                              done: false
-                    };
-                    this.tasks.push(newTask);
-                    this.newTaskText = '';
+  data() {
+    return {
+      tasks: [],
+      newTaskText: "",
+    }
+  },
+  methods: {
+    addTask() {
+      if (this.newTaskText.trim() === "") {
+        alert("A tarefa não pode estar vazia")
+        return
+      }
+      const newTask = {
+        id: Date.now(),
+        text: this.newTaskText.trim(),
+        done: false,
+      }
+      this.tasks.push(newTask)
+      this.newTaskText = ""
 
-                    console.log('Nova tarefa adicionada:', newTask.text);
-          }
-          removeTask(taskId){
-                    this.tasks = this.tasks.filter(task => task.id !== taskId);
-                    console.log('Tarefa removida com ID:', taskId);
-          }
-          }
-          
+      console.log("Nova tarefa adicionada:", newTask.text)
+    },
+    removeTask(taskId) {
+      this.tasks = this.tasks.filter((task) => task.id !== taskId)
+      console.log("Tarefa removida com ID:", taskId)
+    },
+  },
 }
-Vue.createApp(App).mount('#app')
+Vue.createApp(App).mount("#app")
