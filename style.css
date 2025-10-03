@@ -85,6 +85,8 @@ body {
 }
 .task-text {
   word-break: break-word;
+  flex-grow: 1;
+  margin-right: 15px;
 }
 .empty-message {
   text-align: center;
